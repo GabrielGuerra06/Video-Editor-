@@ -26,7 +26,7 @@ public class ImageAi {
             locationsList.add(location);
         }
 
-        String openAiKey = "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";
+        String openAiKey = "YOUR API KEY";
         String prompt = "A inspirational landscape about these locations " + locationsList;
 
         ProcessBuilder processBuilder = new ProcessBuilder();
