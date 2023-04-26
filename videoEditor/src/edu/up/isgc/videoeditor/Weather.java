@@ -87,7 +87,7 @@ public class Weather {
             try {
                 gpsLatitudes.get(i);
                 ProcessBuilder processBuilder = new ProcessBuilder();
-                String weatherKey = "977cc29dfe7fbfc80dab5ef618e52d70";
+                String weatherKey = "YOUR API KEY";
                 Process process = processBuilder.command("curl", "-X", "GET", "https://api.openweathermap.org/data/2.5/weather?lat=" +gpsLatitudes.get(i)+"&lon="+  gpsLongitudes.get(i) + "&appid=" + weatherKey).start();
                 InputStream stream = process.getInputStream();
                 InputStreamReader streamReader = new InputStreamReader(stream);
