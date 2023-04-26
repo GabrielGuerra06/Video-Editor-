@@ -21,7 +21,7 @@ public class TextAi {
             locationsList.add(location);
         }
 
-        String openAiKey = "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";
+        String openAiKey = "YOUR API KEY";
         String model = "text-davinci-003";
         String prompt = "A inspirational phrase about these locations " + locationsList;
 
