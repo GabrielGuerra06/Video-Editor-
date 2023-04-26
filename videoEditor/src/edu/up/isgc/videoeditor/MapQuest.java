@@ -25,7 +25,7 @@ public class MapQuest {
         String lastLatitudeLocation = String.valueOf(gpsLatitudes.get(lastIndex));
         String lastLongitudeLocation = String.valueOf(gpsLongitudes.get(lastIndex));
 
-        String mapQuestApiKey = "YvGX9PjOIeEmLp1DiIuqijOKjXOp9TaP";
+        String mapQuestApiKey = "YOUR API KEY";
         URL url = new URL("https://www.mapquestapi.com/staticmap/v5/map?key="+ mapQuestApiKey +"&locations="+firstLatitudeLocation+","+firstLongitudeLocation +"|marker-lg-A20000-D51A1A||"+lastLatitudeLocation+","+lastLongitudeLocation+"&size=@2x&defaultMarker=marker-sm-22407F-3B5998&zoom=1&size=1000,2000@2x");
         saveMapQuestImage(url, folder);
     }
